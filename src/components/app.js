@@ -1,0 +1,160 @@
+import React, { Component } from 'react';
+import axios from 'axios';
+import Git from './github';
+import {FortAwesomeIcon} from "@fortawesome/react-fontawesome";
+import PortfolioDetail from './portfolio-detail';
+import Home from './home';
+import About from './pages/about';
+import Manager from './pages/manager';
+import Blog from "./pages/blogs/blog";
+import BlogDetail from "./pages/blogs/blog-detail";
+import Contact from './pages/contact';
+import Navi from './navigation-containter';
+import NoMatch from './pages/no-match';
+import Auth from './pages/authen/auth';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route 
+} from 'react-router-dom';
+import Icons from '../helper/icons';
+
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    Icons();
+    this.state = {
+      loggedInStatus:"NOT_LOGGED_IN",
+    }
+
+    this.handleSuccessFullLogin = this.handleSuccessFullLogin.bind(this)
+ 
+    this.handleUnSuccessFullLogin = this.handleUnSuccessFullLogin.bind(this)
+    this.handleLogOut = this.handleLogOut.bind(this)
+  }
+
+handleSuccessFullLogin() {
+  this.setState({
+    loggedInStatus: "LOGGIN_SUCCESS"
+  })
+}
+  handleUnSuccessFullLogin() {
+  this.setState({
+    loggedInStatus: "NOT_LOGGED_IN"
+   })
+ }
+ handleLogOut() {
+  this.setState({
+    loggedInStatus: "NOT_LOGGED_IN"
+  })
+   }
+
+
+
+checkLoginStatus() {
+  return axios.get("https://api.devcamp.space/logged_in", {
+    withCredentials: true}).then(response => {
+      const loggedIn = response.data.logged_in;
+      const loggedStatus = this.state.loggedInStatus;
+      if (loggedIn && loggedStatus === 'LOGGIN_SUCCESS') {
+        return response.data;
+      } else if (loggedIn && loggedStatus === 'NOT_LOGGED_IN') {
+        this.setState({
+          loggedInStatus: 'LOGGIN_SUCCESS'
+        })
+      } else {
+        this.setState({
+          loggedInStatus:'NOT_LOGGED_IN'
+        })
+      }
+    }).catch(error => {
+      console.log("an error has occured", error)
+    }) 
+
+}
+
+componentDidMount() {
+  this.checkLoginStatus()
+}
+
+authorizedPages() {
+  return [
+    <Route key='manager' path='/manager' component={Manager}/>
+  ]
+}
+  
+  render() {
+   
+    
+    
+    return (
+      <div className='container'>
+        
+        <Router>
+        <div>
+        <Navi  
+        loggedInStatus={this.state.loggedInStatus}
+        handleLogOut = {this.handleLogOut}
+        />
+       
+       
+
+       <Switch >
+         <Route exact path='/' component={Home}/> 
+         <Route path="/b/:slug" component={BlogDetail}/>
+         
+         <Route exact path='/about' component={About}/> 
+         <Route path="/blog" 
+          render={props => (
+          <Blog
+           {...props}
+           loggedInStatus={this.state.loggedInStatus}    
+           />
+          )}
+
+         
+         />
+         <Route path='/projects' component={Git}/>
+         
+         
+         <Route path='/contact' component={Contact}/>
+         {this.state.loggedInStatus==='LOGGIN_SUCCESS' ? this.authorizedPages():null }
+         <Route path='/auth'
+                render={props=> (
+                  <Auth 
+                  {...props}
+                  handleSuccessFullLogin = {this.handleSuccessFullLogin}  
+                  handleUnSuccessFullLogin = {this.handleUnSuccessFullLogin}  
+                  />
+                )}
+         
+         />
+         <Route
+         exact path = '/portfolio-detail/:slug'
+         component={PortfolioDetail}
+         
+         />
+
+        
+
+
+         <Route component={NoMatch}/>
+         </Switch>
+       
+       
+        </div>
+
+        </Router>
+
+
+
+        
+
+        
+
+
+
+      </div>
+    );
+  }
+}

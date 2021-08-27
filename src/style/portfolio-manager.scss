@@ -1,0 +1,49 @@
+body {
+    margin:0px
+}
+.portfolio-manager-wrapper {
+    margin:0px;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    color:black;
+    .right-column-manager {
+        background-color:lightblue;
+
+    }
+    .left-column-manager {
+        background-color: yellowgreen;
+    }
+}
+.manager-sideBar {
+
+    .text-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    .description  {
+      display: flex;
+      margin-left:12px;
+      
+    }
+ .actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:15px;
+    
+    .icon {
+        font-size: medium;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+            color:red;
+            font-size: larger;
+        }
+    }}
+
+    img {
+        width:100%;
+        
+    }
+}

@@ -1,0 +1,29 @@
+.about-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height:calc(100vh - 83px);
+
+    .img-container {
+        img {
+            width:100%;
+            
+        
+        }
+
+    }
+    .text-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .text-wrapper {
+            width: 75%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+}
+body {
+    margin:0px;
+}

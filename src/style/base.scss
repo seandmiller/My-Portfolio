@@ -1,0 +1,13 @@
+
+
+body {
+ margin:2px;
+ font-family:'montserrat' ;
+ background-color: teal;
+ color:orange
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}

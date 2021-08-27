@@ -1,0 +1,18 @@
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 83px);
+    
+
+    .left-column {
+        img {
+        width: 100%; 
+          }
+    }
+    .right-column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

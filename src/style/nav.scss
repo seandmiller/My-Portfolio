@@ -1,0 +1,42 @@
+@import 'var.scss';
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding:30px;
+}
+.left-side {
+    display: flex;
+}
+
+.nav-link {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: 0.5s ease-in-out;
+    text-transform: uppercase;
+    margin-right: 20px;
+ 
+
+    a {
+        color: orange;
+        text-decoration:none;
+        
+        &:hover {
+            color:black;
+        }
+    }
+    &:hover {
+        border-bottom: 1px solid black;
+    } 
+    .nav-link-active  {
+        border-bottom: 1px solid  black ;
+        color:black;
+        border-radius: 4px;
+        transition: 0.5s ease-in-out;
+        &:hover {
+            border-bottom: 1px transparent;
+
+        }
+    }
+
+}

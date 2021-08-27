@@ -1,0 +1,27 @@
+.git-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:20px;
+
+    a {
+        text-decoration: none;
+        color:orange;
+    }
+
+    .git-wrapper {
+        text-align:center;
+        background-color:#265b5f ;
+        border-radius: 20px;
+        transition: 0.5s ease-in-out;
+        &:hover {
+            color:teal;
+            background-color:lightblue ;
+            box-shadow: 1px 1px 10px black;
+        }
+    }
+}
+
+.main-git {
+   display: flex;
+   justify-content: center;
+}
