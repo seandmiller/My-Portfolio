@@ -112,6 +112,7 @@ render() {
             
         ) }
     }) 
+    
  
    return (
     <div className="blog-container"> 
@@ -125,7 +126,11 @@ render() {
        
        <div className="content-container"> 
        
-       {blogRecords}
+       {blogRecords.length > 1 ? blogRecords : 
+       <div className='no-blogs'> 
+            <h1> No Blogs Yet <FontAwesomeIcon icon='meh' />  </h1> 
+       
+       </div>}
        
        </div>
        {

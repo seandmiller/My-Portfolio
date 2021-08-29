@@ -11,7 +11,7 @@ export default function() {
 
          }}
          >
-
+          Photo Credit: Lisa Keating's Studio 
          </div>
          <div className='right-column' >
             <div className='contact-info' >

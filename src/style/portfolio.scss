@@ -106,3 +106,45 @@
     grid-template-columns: 1fr  1fr 1fr;
    
 }
+
+
+@media (max-device-width : 600px) {
+   .homepage-wrapper {
+       .item-img {
+           width:100%;
+       }
+       .btn {display:none;
+             
+
+       }
+       
+       .portfolio-items-wrapper {
+           display:grid;
+           grid-template-columns: 1fr;
+           .text-name {
+               display: flex;
+               justify-content: center;
+           }
+       }
+       .lang-lib {
+           display: none;
+       }
+   }
+  
+   .item-details-wrapper {
+    width: 100%;
+    
+   
+   .content-detail {
+       width:100%;
+    .img-wrapper {
+        width: 100%;
+        img {
+            width:100%;
+            height:100%
+        }
+    } }
+}
+
+
+}

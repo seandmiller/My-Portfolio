@@ -49,9 +49,9 @@ handleMouseLeave() {
 
 
      </div>
-
+      <div className='text-name'>
       <h1>{name} </h1>
-      
+      </div>
       
      
 
