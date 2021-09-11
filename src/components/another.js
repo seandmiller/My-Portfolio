@@ -78,7 +78,9 @@ export default class Another extends Component {
           }  
   componentWillMount() {
     this.getPortItems();
+  
   }
+  
 
         itemsList() {
    

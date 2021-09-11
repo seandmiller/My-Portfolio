@@ -25,12 +25,15 @@ export default class App extends Component {
     Icons();
     this.state = {
       loggedInStatus:"NOT_LOGGED_IN",
+      phone:false
     }
 
     this.handleSuccessFullLogin = this.handleSuccessFullLogin.bind(this)
  
     this.handleUnSuccessFullLogin = this.handleUnSuccessFullLogin.bind(this)
     this.handleLogOut = this.handleLogOut.bind(this)
+    this.isMobile = this.isMobile.bind(this)
+    this.handleScroll = this.handleScroll.bind(this)
   }
 
 handleSuccessFullLogin() {
@@ -73,8 +76,22 @@ checkLoginStatus() {
 
 }
 
+isMobile() {
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    this.setState({
+      phone:true
+    })
+    
+  } else{
+    this.setState({
+      phone:false
+    })
+  }
+}
+
 componentDidMount() {
-  this.checkLoginStatus()
+  this.checkLoginStatus();
+  this.isMobile();
 }
 
 authorizedPages() {
@@ -82,21 +99,26 @@ authorizedPages() {
     <Route key='manager' path='/manager' component={Manager}/>
   ]
 }
+handleScroll() {
+  console.log(window.innerHeight)
+}
   
   render() {
-   
-    
+    const pageLocation =  document.documentElement.scrollTop + window.innerHeight;
+    // setInterval(console.log(parseInt(pageLocation), document.documentElement.offsetHeight), 2)
     
     return (
-      <div className='container'>
+      <div className='container' >
         
         <Router>
         <div>
+        {this.state.phone ? <div className='mobileName'><h1>Aseani Miller</h1> </div>: 
         <Navi  
         loggedInStatus={this.state.loggedInStatus}
         handleLogOut = {this.handleLogOut}
+        isMobile     = {this.state.phone}
         />
-       
+        }
        
 
        <Switch >
@@ -143,7 +165,20 @@ authorizedPages() {
        
        
         </div>
-
+       
+      {/* {  const pageLocation = window.innerHeight + document.documentElement.scrollTop
+      if ( parseInt(pageLocation) === document.documentElement.offsetHeight ) {
+                      this.getBlogItems();
+      }} */}
+        
+        {this.state.phone ?
+        
+        <Navi  
+        loggedInStatus={this.state.loggedInStatus}
+        handleLogOut = {this.handleLogOut}
+        isMobile     = {this.state.phone}
+        />: null
+       }
         </Router>
 
 
@@ -151,8 +186,8 @@ authorizedPages() {
         
 
         
-
-
+       
+       
 
       </div>
     );

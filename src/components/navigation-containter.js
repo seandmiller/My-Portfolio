@@ -62,7 +62,7 @@ const Navi = (props) => {
     
      </div>
      <div className='right-side'>
-        Aseani Miller 
+           {props.isMobile ? null : <div>Aseani Miller </div>}
         {props.loggedInStatus === 'LOGGIN_SUCCESS' ? <a onClick={handleSignOut}> <FontAwesomeIcon icon="sign-out-alt"/></a> : null }
 
      </div>
