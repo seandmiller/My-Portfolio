@@ -142,9 +142,9 @@ export default class Another extends Component {
            <li>FastAPI - Python</li>
            <li> OpenCV - Python (beginner)</li>
            <li> React - JavaScript</li>
-           <a href='https://github.com/seandmiller'> <li> GitHub <i className="fab fa-github-square "></i> </li>   </a>
+           <a href='https://github.com/seandmiller'> <h3> GitHub <i className="fab fa-github-square "></i> </h3>   </a>
          </ul>
-         
+        
          
          </div> :
          null}
