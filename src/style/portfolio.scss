@@ -63,6 +63,12 @@
     filter:brightness(10%);
 }
 
+.para-wrapper-framework {
+    a {
+        text-decoration: none;
+        color:black;
+    }
+}
 .para-wrapper {
     margin-right:3px;
     font-size: 15px;
@@ -127,8 +133,11 @@
            }
        }
        .lang-lib {
+           display: grid;
+           grid-template-columns: 1fr;
+       .para-wrapper {
            display: none;
-       }
+       }  }
    }
   
    .item-details-wrapper {

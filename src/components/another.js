@@ -136,7 +136,7 @@ export default class Another extends Component {
                                      programming in this language as I typically use it to traverse the dom or mess around with webpages via the dev tool.  </p>
           </div> : null}
         {this.state.libraries ? 
-         <div className='para-wrapper' >  
+         <div className='para-wrapper-framework' >  
          <ul> As of current these are the Technologies that I know
            <li>tkinter - Python</li>
            <li>FastAPI - Python</li>
