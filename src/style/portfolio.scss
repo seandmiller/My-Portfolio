@@ -22,6 +22,28 @@
     
     .item-wrapper {
         position:relative;
+        .text-name {
+            display: flex;
+            justify-content: center;
+             h3 {
+                 display: flex;
+                 justify-content: center;
+                 width: 100%;
+                 align-items: center;
+                 div {
+                     margin-left: 10px;
+                     font-size: 28px;
+                 }
+                 .javascript-icon{
+                     color:#61DBFB;
+                 }
+                 .python-icon {
+                     color:#4B8BBE ;
+
+                 }
+             }
+
+        }
     }
 
     .item-img {
