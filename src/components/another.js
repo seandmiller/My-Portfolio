@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Item from './item';
 import axios from 'axios';
+import {Spring} from 'react-spring';
 
 
 export default class Another extends Component {
@@ -114,6 +115,15 @@ export default class Another extends Component {
 
     return (
         <div className='homepage-wrapper'>
+        <Spring
+        from={{opacity:0, marginTop:-500}}
+        to={{opacity:1, marginTop:0 }}
+        config={{delay: 1000,duration:1000}}
+        >
+          {props => (
+            <div style={props}
+            > 
+
         <div className='btn'>
          <button onClick={() => {this.getPortItems('Language')}}> Language </button>
          <button onClick={() => {this.getPortItems('Libraries/modules')}}> Libraries </button>
@@ -121,11 +131,11 @@ export default class Another extends Component {
          
         </div>
         
-        <div className='portfolio-items-wrapper'>
-         {this.itemsList()} 
-     
-     
-      </div>  
+            <div className='portfolio-items-wrapper'>
+            {this.itemsList()} 
+           </div>  
+
+        
       <div className='lang-lib'>
          {this.state.language ?  <div>  
          <p  className="para-wrapper"> 
@@ -150,8 +160,11 @@ export default class Another extends Component {
          
          </div> :
          null}
+          </div>
         </div>
-
+          )}
+          
+      </Spring>
 
      </div>
     

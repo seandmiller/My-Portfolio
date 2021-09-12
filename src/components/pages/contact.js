@@ -5,13 +5,14 @@ export default function() {
     return ( <div className='contact-container'>
          <div className='left-column'
          style={{
-             background: 'url(' + 'https://d26oc3sg82pgk3.cloudfront.net/files/media/uploads/casting_call/ac9f8d29-2f4e-4e66-ab96-92a56d13ec1a-bWFpbi1uLW4tMC0wLTAtNjQwLTk2NA%3D%3D.jpg' + ')',
+             background: 'url(' + 'https://images.assetsdelivery.com/compings_v2/yupiramos/yupiramos1606/yupiramos160613301.jpg' + ')',
              backgroundSize: 'cover',
-             backgroundPosition:'center'
+             backgroundPosition:'center',
+             filter:'brightness(50%)'
 
          }}
          >
-          Photo Credit: Lisa Keating's Studio 
+          
          </div>
          <div className='right-column' >
             <div className='contact-info' >
