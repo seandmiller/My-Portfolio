@@ -18,6 +18,8 @@ import {
   Route 
 } from 'react-router-dom';
 import Icons from '../helper/icons';
+import Resume from './resume';
+
 
 export default class App extends Component {
   constructor(props) {
@@ -137,7 +139,7 @@ handleScroll() {
          
          />
          <Route path='/projects' component={Git}/>
-         
+         <Route path='/resume' component={Resume}/>
          
          <Route path='/contact' component={Contact}/>
          {this.state.loggedInStatus==='LOGGIN_SUCCESS' ? this.authorizedPages():null }

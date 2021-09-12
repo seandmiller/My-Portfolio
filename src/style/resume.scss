@@ -1,0 +1,48 @@
+.resume-wrapper {
+    .resume-cont {
+        display: flex;
+        justify-content: center;
+        
+    }
+    .resume-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a {
+            text-decoration: none;
+            color: orange;
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+
+            &:hover {
+                border: 1px solid orange;
+                padding:3px;
+                border-radius: 20px;
+            }
+
+        }
+    }
+    
+}
+.LinkedIn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 30px;
+    
+    a {
+        text-decoration: none;
+        color:orange;
+        cursor: pointer;
+
+    }
+}
+
+@media (max-device-width : 600px) {
+   .resume-wrapper {
+    .resume-cont {
+    display: grid;
+    grid-template-columns: 1fr; }
+ 
+   }
+}
