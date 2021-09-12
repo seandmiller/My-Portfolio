@@ -24,12 +24,12 @@ export default function() {
           <h2>Projects</h2>  
           <li> <h4>Connect four Algorithm </h4></li>
            <p>Created a Connect four game using Tkinter library for the GUI. 
-            In this project  I created an Algorithm that detected the winner and ends the game once this condition 
+            In this project I created an Algorithm that detected the winner and ends the game once this condition 
             has been met.
            </p>
            <li> <h4>Image Translator </h4>  </li>
            <p>Utilizing computer vision, Pytesseract and googletrans database I was able to create an application that parse's text
-               off of an image and then translate that text into a different language. While working on this project, I learned how
+               off of an image and then translate that text into a different language. While working on this project, I learned how to
                capture the edges of an image using OpenCV and highlight the text in order to make it easier for Pytesseract to parse the image
            </p>
          
@@ -42,11 +42,11 @@ export default function() {
         <li><h4>TransDev - Autonomous Vehicle Specialist </h4></li>
         <p> During this work experience I was interacting with the Waymo self autonomous vehicles,
             my responsibilities were to log data from the vehicle, correct improper behavior and to take note 
-            of anything that made me feel uncomfortable inside the vehicle.
+            of anything that made me feel uncomfortable while inside the vehicle.
 
         </p>
         <li><h4>Tesla Production Associate</h4></li>
-        <p> My responsibilities were to check the vehicle for paint defects and to remove them before they exit the factory.
+        <p> My responsibilities were to check the vehicle for paint defects and to remove the defects before the vehicle exit the factory.
               My other responsibilities include, wiping the vehicle before applying paint and driving the vehicle to a desired location in the factory.
 
         </p>
