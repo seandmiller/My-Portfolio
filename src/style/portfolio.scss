@@ -1,11 +1,22 @@
 .homepage-wrapper {
+
     
   .btn {  display: grid;
          grid-template-columns: 1fr 1fr 1fr;
+         
+         
     button {
         width: 100%;
         background-color:orange;
         color:teal;
+         outline:none;
+         border:none;
+         transition: 0.5s ease-in-out;
+         &:hover {
+             background-color: teal;
+             color:orange;
+         }
+
     } 
    }
 }
@@ -13,6 +24,7 @@
 .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    
     grid-gap:1px;
    a {text-decoration: none;
        color:orange;

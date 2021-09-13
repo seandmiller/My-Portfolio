@@ -18,6 +18,8 @@ import Icons from '../helper/icons';
 import Resume from './resume';
 
 
+
+
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -188,3 +190,4 @@ handleScroll() {
     );
   }
 }
+

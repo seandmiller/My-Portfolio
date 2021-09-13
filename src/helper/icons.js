@@ -1,7 +1,6 @@
 
 import { faTrash, 
      faSignOutAlt,
-     faEdit,
      faBan,faSpinner,
      faPlusCircle, 
      faPhone, 
@@ -16,7 +15,8 @@ import { faTrash,
      faStarOfLife,
      faAtom,
      faCode,
-     faBook
+     faBook,
+     faEdit
 
     } from '@fortawesome/free-solid-svg-icons';
 import {library} from "@fortawesome/fontawesome-svg-core";
@@ -24,6 +24,6 @@ import {library} from "@fortawesome/fontawesome-svg-core";
 
 
 const Icons = () => {
- return library.add(faAtom, faBook,faCode, faStarOfLife, faBriefcase,faDownload,faTrash,faSignOutAlt,faEdit, faBan, faMeh, faSpinner,faPlusCircle, faPhone,faEnvelope, faMapMarkedAlt, faLock, faClipboardCheck,faClipboard); }
+ return library.add(faAtom, faEdit,faBook,faCode, faStarOfLife, faBriefcase,faDownload,faTrash,faSignOutAlt, faBan, faMeh, faSpinner,faPlusCircle, faPhone,faEnvelope, faMapMarkedAlt, faLock, faClipboardCheck,faClipboard); }
 
  export default Icons;
