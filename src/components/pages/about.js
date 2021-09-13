@@ -1,5 +1,6 @@
 
 import React from 'react';
+import photo from '../../helper/images/myPhoto.jpg';
 
 //react redux router
 export default class About extends React.Component {
@@ -38,7 +39,7 @@ componentDidMount() {
     
   <div className="img-container"
   style={{
-    background: 'url(' +'https://mail.google.com/mail/u/0?ui=2&ik=5af78031ce&attid=0.1&permmsgid=msg-a:r6556119909842431515&th=17bd27b6e7ebeced&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ92tSak-7V0g1KYvydrVYfuvYlpUK3c0SBaZaP418XK08v4r7qg3dc5wZGgq0MJE10pgvwzdvND1iQBc9qOf6v4WwQh1joQgTI8sInSW6AjXEoah0Yp71EEKtI&disp=emb&realattid=ii_ktf44lyh0'+')',
+    background: `url(${photo})`,
     backgroundSize:'cover',
     backgroundPosition:'top'
   }}

@@ -20,7 +20,10 @@ body {
 @media (max-device-width:600px) {
 
     body {
-    padding-bottom: 100px;  }
+    padding-bottom: 100px; 
+      .container {
+          margin:0px;
+      } }
 
 
 }

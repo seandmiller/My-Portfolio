@@ -8,10 +8,10 @@ export default class Port extends Component {
     constructor() {
         super();
         this.state = { 
-          'Loading':false,
+          Loading:false,
           language: true,
           libraries:true,
-           'data': [],
+           data: [],
             
         }
     

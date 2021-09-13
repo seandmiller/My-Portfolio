@@ -61,7 +61,7 @@ componentDidUpdate() {
         const {
             id,
             name,
-            thumb_image,
+            
             category,
             description,
             thumb_image_url,
