@@ -5,6 +5,7 @@
          grid-template-columns: 1fr 1fr 1fr;
          
          
+         
     button {
         width: 100%;
         background-color:orange;
@@ -15,6 +16,7 @@
          &:hover {
              background-color: teal;
              color:orange;
+             cursor: pointer;
          }
 
     } 
