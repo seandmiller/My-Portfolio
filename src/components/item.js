@@ -21,7 +21,7 @@ handleMouseLeave() {
 };
 
   render () {
-  const {name, description,id, img,thumb_image_url, logo_url } = this.props.item
+  const {name, description,id, thumb_image_url, } = this.props.item
   
   
   return (
@@ -50,7 +50,7 @@ handleMouseLeave() {
      </div>
       <div className='text-name'>
       <h3>{name}   {name === 'JavaScript' ? <div className='javascript-icon'> <FontAwesomeIcon icon='atom' spin={true}/>  </div>:null} 
-              {name==='Python' ? <div className='python-icon'> <i class="fab fa-python"></i> </div> :null}
+              {name==='Python' ? <div className='python-icon'> <i className="fab fa-python"></i> </div> :null}
               {name === 'Frameworks' ? <div className='framework-icon'> <FontAwesomeIcon icon='book'/> </div> : null }
 
        </h3>
