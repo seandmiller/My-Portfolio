@@ -141,9 +141,18 @@
    
 }
 
-.lang-lib {
+.language-library-wrapper {
     display: grid;
     grid-template-columns: 1fr  1fr 1fr;
+    div {
+        display: flex;
+        justify-content: center;
+        .para-wrapper {
+            width: 60%;
+            text-align: center;
+        }
+    
+    }
    
 }
 
@@ -166,7 +175,7 @@
                justify-content: center;
            }
        }
-       .lang-lib {
+       .language-library-wrapper {
            display: grid;
            grid-template-columns: 1fr;
        .para-wrapper {

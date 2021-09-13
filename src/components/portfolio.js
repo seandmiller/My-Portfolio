@@ -129,7 +129,7 @@ export default class Port extends Component {
            </div>  
 
         
-      <div className='lang-lib'>
+      <div className='language-library-wrapper'>
          {this.state.language ?  <div>  
          <p  className="para-wrapper"> 
           Python is an incredible language, most of my experience in programing comes from here

@@ -1,7 +1,9 @@
 .resume-wrapper {
     .resume-cont {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:25px;
+        margin:20px;
         
     }
     .resume-header {
