@@ -121,7 +121,7 @@ handleScroll() {
 
        <Switch >
          <Route exact path='/' component={Home}/> 
-         <Route path="/b/:slug" component={BlogDetail}/>
+         
          
          <Route exact path='/about' component={About}/> 
          <Route path="/blog" 
