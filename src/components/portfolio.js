@@ -4,7 +4,7 @@ import axios from 'axios';
 import {Spring} from 'react-spring';
 
 
-export default class Another extends Component {
+export default class Port extends Component {
     constructor() {
         super();
         this.state = { 

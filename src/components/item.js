@@ -43,9 +43,7 @@ handleMouseLeave() {
      }}
      />
      <div className='img-text-wrapper'>
-     {/* <div className='img-logo-wrapper'>
-       <img src =  {logo_url} />
-     </div> */}
+     
      <div className="subtitle">{description}</div>
 
 

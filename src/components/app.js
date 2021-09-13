@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Git from './github';
-import {FortAwesomeIcon} from "@fortawesome/react-fontawesome";
 import PortfolioDetail from './portfolio-detail';
 import Home from './home';
 import About from './pages/about';
 import Manager from './pages/manager';
-import Blog from "./pages/blogs/blog";
-import BlogDetail from "./pages/blogs/blog-detail";
 import Contact from './pages/contact';
 import Navi from './navigation-containter';
 import NoMatch from './pages/no-match';
@@ -106,8 +103,7 @@ handleScroll() {
 }
   
   render() {
-    const pageLocation =  document.documentElement.scrollTop + window.innerHeight;
-    // setInterval(console.log(parseInt(pageLocation), document.documentElement.offsetHeight), 2)
+   
     
     return (
       <div className='container' >
@@ -168,10 +164,7 @@ handleScroll() {
        
         </div>
        
-      {/* {  const pageLocation = window.innerHeight + document.documentElement.scrollTop
-      if ( parseInt(pageLocation) === document.documentElement.offsetHeight ) {
-                      this.getBlogItems();
-      }} */}
+      
         
         {this.state.phone ?
         

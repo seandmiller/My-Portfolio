@@ -1,7 +1,7 @@
 import React from 'react';
-import Another from './another';
+import Port from './portfolio';
 export default function() {
     return <div>
-      <Another/>         
+      <Port/>         
     </div>
 }
