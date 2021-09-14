@@ -3,24 +3,36 @@ import React from 'react';
 
 
 
+
 export default class GitItems extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            copyText:""
+            copyText:"",
+        
         }
 
-    this.handleCopyText = this.handleCopyText.bind(this)
+    this.handleCopyText = this.handleCopyText.bind(this);
+    
+   
+    
     }
 
   handleCopyText(text) {
     navigator.clipboard.writeText(text)
     this.setState({
-        copyText:'Success'
-    })
+        copyText:'Success',
+
+    })   
     
+  }
+  componentDidMount() {
     
-  }  
+  }
+
+ 
+  
+ 
     
     render() {
     const {
@@ -28,10 +40,10 @@ export default class GitItems extends React.Component {
         language,
         clone_url  
     } = this.props.data;
- 
+   
 
     return (
-        <div className='git-wrapper' onMouseLeave={() => {this.setState({copyText:""})}} >
+        <div className='git-wrapper' onMouseLeave={() => {this.setState({copyText:""})} } >
         <a href={'https://github.com/seandmiller/' + name} > 
         <h1> {name} <i className="fab fa-github-square "></i>  </h1>
 
