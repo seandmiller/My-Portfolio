@@ -24,7 +24,7 @@ const Navi = (props) => {
   const dynamicLink = (route,text) => {
    return (
     <div className='nav-link'>
-    <NavLink to={route} activeClassName='nav-link-active' >{text}  </NavLink>
+    <NavLink to={route} activeClassName='nav-link-active' >{text}</NavLink>
   </div>
      
    )
