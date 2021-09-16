@@ -61,7 +61,7 @@ componentDidMount() {
      <div>
        <h1 className='main-git'>GitHub Projects</h1>
         <div className='percentage-wrapper'>  <h3>JavaScript: {(this.state.javascript / this.state.totalRepos) * 100}%</h3>           
-                                              <h3>Python: {(this.state.python / this.state.totalRepos) * 100 }%    </h3>                     </div>
+                                              <h3>Python: {(this.state.python / this.state.totalRepos) * 100 }%  </h3>                     </div>
        <div className='git-container'>
        {this.theRepos()}
        </div>

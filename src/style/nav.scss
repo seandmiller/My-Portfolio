@@ -15,7 +15,7 @@
     transition: 0.5s ease-in-out;
     text-transform: uppercase;
     margin-right: 20px;
- 
+    
 
     a {
         color: orange;
@@ -44,18 +44,21 @@
 @media (max-device-width:600px) {
     .nav-wrapper {
         // background-color: #004953;
-        background-color: transparent;
+        background-color: orange;
         position:fixed;
+        padding:25px;
         
         top:89%;
-        width: 100%;
-        height: 1px;
+        width:100%;
+        font-weight: 900;
+        font-family: 'Lobster', cursive;
    
         .left-side {
             display:flex;
             justify-content: center;
             width: 100%;
             
+        
             
           
            
@@ -68,6 +71,7 @@
                 font-size: 17px;
                 a {
                     width: 100px;
+                    color:teal;
                 }
                 
             }

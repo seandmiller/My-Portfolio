@@ -26,15 +26,7 @@ export default class GitItems extends React.Component {
     })   
     
   }
-  componentDidMount() {
-    
-  }
-
- 
-  
- 
-    
-    render() {
+     render() {
     const {
         name,
         language,
