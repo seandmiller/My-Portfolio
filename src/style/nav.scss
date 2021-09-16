@@ -47,8 +47,8 @@
         background-color: orange;
         position:fixed;
         padding:25px;
-        
-        top:89%;
+        white-space: nowrap;
+        top:90%;
         width:100%;
         font-weight: 900;
         font-family: 'Lobster', cursive;
@@ -69,7 +69,9 @@
             .nav-link {
                 width:100px;
                 font-size: 17px;
-                a {
+               
+                a { text-align: center;
+                    align-items: center;
                     width: 100px;
                     color:teal;
                 }
