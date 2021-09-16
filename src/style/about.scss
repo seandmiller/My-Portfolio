@@ -17,7 +17,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 2px 2px 10px black;
+        
         .text-wrapper {
             width: 75%;
             display: flex;
@@ -44,6 +44,7 @@ body {
             margin-top: 40px;
             border-top:2px solid orange;
             border-bottom:2px solid orange ;
+            box-shadow: 2px 2px 10px black;
         }
     }
 }
