@@ -43,15 +43,14 @@
 
 @media (max-device-width:600px) {
     .nav-wrapper {
-        // background-color: #004953;
-        background-color: orange;
+     
         position:fixed;
         padding:25px;
         white-space: nowrap;
         top:91%;
         width:100%;
         font-weight: 900;
-        font-family: 'Lobster', cursive;
+      
    
         .left-side {
             display:flex;
@@ -61,8 +60,6 @@
         
             
           
-           
-            
 
 
 
@@ -73,7 +70,7 @@
                 a { text-align: center;
                     align-items: center;
                     width: 100px;
-                    color:teal;
+                    color:orange;
                 }
                 
             }
