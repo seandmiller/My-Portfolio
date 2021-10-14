@@ -6,7 +6,30 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
-  .git-container {
+  
+    .snippets {
+        .snippet-wrapper { 
+            display: grid;
+            grid-template-columns: 1fr;
+        
+            
+      
+        img {
+            width: 450px;
+            height: 450px;
+            margin-left:130px
+    
+            
+        } 
+      h4 {
+        text-align: center; 
+      }
+      }
+    }
+  
+  
+  
+    .git-container {
     width: 30%;
     display: grid;
 
@@ -70,6 +93,14 @@
 
 @media (max-device-width:600px) {
     .gitPage {
+        .snippets {
+
+            .snippet-wrapper {
+                img {
+                    margin-left: 0px;
+                }
+            }
+        }
         display: grid;
         grid-template-columns: 1fr;
         h1 {
