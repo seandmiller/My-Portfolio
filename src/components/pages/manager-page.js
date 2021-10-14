@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import axios from 'axios';
 import  DropzoneComponent from 'react-dropzone-component';
 import '../../../node_modules/dropzone/dist/min/dropzone.min.css';
@@ -6,7 +6,7 @@ import '../../../node_modules/react-dropzone-component/styles/filepicker.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
-export default class extends Component {
+export default class extends PureComponent {
     constructor(props) {
         super(props);
         this.state = {

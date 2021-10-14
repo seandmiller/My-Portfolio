@@ -1,9 +1,9 @@
-import React,{Component} from 'react';
+import React,{PureComponent} from 'react';
 import axios from 'axios';
 import ManagerSideBar from './manager-sideBar';
 import ManagerForm from './manager-page';
 
-export default class Manager extends Component {
+export default class Manager extends PureComponent {
   constructor() {
     super();
     this.state = {

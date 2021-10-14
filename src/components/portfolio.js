@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import Item from './item';
 import axios from 'axios';
 
 
 
-export default class Port extends Component {
+export default class Port extends PureComponent {
     constructor() {
         super();
         this.state = { 

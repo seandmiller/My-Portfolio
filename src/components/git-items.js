@@ -4,7 +4,7 @@ import React from 'react';
 
 
 
-export default class GitItems extends React.Component {
+export default class GitItems extends React.PureComponent {
     constructor(props) {
         super(props);
         this.state = {
