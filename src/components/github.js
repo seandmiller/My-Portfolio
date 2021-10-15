@@ -20,7 +20,7 @@ export default class Git extends Component {
                        url: 'https://media-exp1.licdn.com/dms/image/C5622AQEVy37SokS-Eg/feedshare-shrink_800/0/1633274135894?e=1637193600&v=beta&t=BEvrVWoTcHkIw7oQG9vxuB4wfavPOHpKGjT7f_8-aCw',
                        desc:'In the above code we are utilizing Recursion to transform a list of integers into its binary counter part, as you can see we first check the type of datastructure it is first before we decide to convert it enabling us to be able transform multidimensional lists as well ',
                        time_comp: '2 * O(n) as we have two loops neither of them are nested',
-                       learned:  'Math library is not needed in this equation, I initially used it to calculate the length of the integers binary format using binary logarithm. (Log(integer) // 1) + 1 '
+                       learned:  'Math library is not needed in this equation, I initially used it to calculate the length of the integers binary format using binary logarithm.  Log(integer) // 1 + 1 '
                        },
                        {title: 'Using a HashMap to showing all available hours of a schedule',
                        url:  'https://i.imgur.com/zZqKzF8.png',
