@@ -8,6 +8,8 @@
     grid-gap: 25px;
   
     .snippets {
+        h1 { margin-left: 200px;
+        }
         .snippet-wrapper { 
             display: grid;
             grid-template-columns: 1fr;
@@ -94,6 +96,7 @@
 @media (max-device-width:600px) {
     .gitPage {
         .snippets {
+           
 
             .snippet-wrapper {
                 img {
