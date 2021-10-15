@@ -23,8 +23,11 @@
     
             
         } 
-      h4 {
+      h3 {
         text-align: center; 
+      }
+      h5 {
+          text-align: center;
       }
       }
     }
@@ -96,7 +99,9 @@
 @media (max-device-width:600px) {
     .gitPage {
         .snippets {
-           
+           h1 {
+               margin-left: 0px;
+           }
 
             .snippet-wrapper {
                 img {

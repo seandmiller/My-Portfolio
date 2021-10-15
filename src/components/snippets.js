@@ -3,14 +3,16 @@ import React from 'react';
 
 
 const Snippets = (props) => {
-   const {title , url, desc } = props.snippet
+   const {learned ,time_comp, title , url, desc } = props.snippet
 
 
 return  (<div className='snippet-wrapper'>
-      <h4>{title}</h4>
+      <h3>{title}</h3>
    <div> <img src={url}/> </div>
 
-     <h4 className='snippet-desc' >Description: {desc}</h4>
+     <h5 className='snippet-desc' >Description: {desc}</h5>
+      <h5>Time Complexity: {time_comp} </h5>
+      <h5>Notes: {learned} </h5>
         </div>)
 }
 

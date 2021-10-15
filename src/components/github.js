@@ -18,11 +18,15 @@ export default class Git extends Component {
                       {
                        title:'Using Recursion to transform integers into binary',
                        url: 'https://media-exp1.licdn.com/dms/image/C5622AQEVy37SokS-Eg/feedshare-shrink_800/0/1633274135894?e=1637193600&v=beta&t=BEvrVWoTcHkIw7oQG9vxuB4wfavPOHpKGjT7f_8-aCw',
-                       desc:'In the above code we are utilizing Recursion to transform a list of integers into its binary counter part, as you can see we first check the type of datastructure it is first before we decide to convert it enabling us to be able transform multidimensional lists as well '
+                       desc:'In the above code we are utilizing Recursion to transform a list of integers into its binary counter part, as you can see we first check the type of datastructure it is first before we decide to convert it enabling us to be able transform multidimensional lists as well ',
+                       time_comp: '2 * O(n) as we have two loops neither of them are nested',
+                       learned:  'In this problem I learned how to translate any whole number or string into binary using Math. '
                        },
-                       {title: 'Using a HashMap im showing all available hours of a schedule',
+                       {title: 'Using a HashMap to showing all available hours of a schedule',
                        url:  'https://i.imgur.com/zZqKzF8.png',
-                       desc: 'In this problem given it takes 1 hour and 30 minutes to complete a task (which can be changed) and when the task is supposed to be finished, im able to set the time when the task is should be started then removing the start time and the end time from the schedule because you will no longer be available. Set schedule starts from 8am to 7pm'
+                       desc: 'In this problem given it takes 1 hour and 30 minutes to complete a task (which can be changed) and when the task is supposed to be finished, im able to set the time when the task should be started then remove the start time through the end time from the schedule because you will no longer be available. Set schedule starts from 8am to 7pm',
+                       time_comp: '2 * O(n) + O(n^2) as we have two loops and another loop with a nested loop',
+                       learned: 'In this problem I went the extra mile and made the data set more complicated than it needed to be, I dynamically calculated what the start time should be instead of having that as a parameter'
 
                        } 
                 
