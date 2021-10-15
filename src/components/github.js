@@ -22,7 +22,7 @@ export default class Git extends Component {
                        },
                        {title: 'Using a HashMap im showing all available hours of a schedule',
                        url:  'https://i.imgur.com/zZqKzF8.png',
-                       desc: 'In this problem given it takes 1 hour and 30 minutes to complete a task (which can be changed) and when the task is supposed to be finished, im able to set the time when the task is should be started and removing the  start time and the end time from the schedule because you will no longer be available. Set schedule starts from 8am to 7pm'
+                       desc: 'In this problem given it takes 1 hour and 30 minutes to complete a task (which can be changed) and when the task is supposed to be finished, im able to set the time when the task is should be started then removing the start time and the end time from the schedule because you will no longer be available. Set schedule starts from 8am to 7pm'
 
                        } 
                 
