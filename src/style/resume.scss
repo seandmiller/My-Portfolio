@@ -1,5 +1,6 @@
 .resume-wrapper {
     box-shadow: 2px 2px 5px black;
+
     .resume-cont {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -42,10 +43,13 @@
 }
 
 @media (max-device-width : 600px) {
-   .resume-wrapper {
+   
+     
+    .resume-wrapper {
+       width: 100%;
     .resume-cont {
     display: grid;
     grid-template-columns: 1fr; }
  
-   }
-}
+    }
+  }

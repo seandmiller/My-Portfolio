@@ -91,7 +91,7 @@ componentDidMount() {
     
   
  return (
-     <div>
+     <div className='git'>
        <h1 className='main-git'>GitHub Projects</h1>
          {this.state.isLoading ? <div className='loading'> <FontAwesomeIcon icon='spinner' spin={true}  />  </div> :
         <div className='percentage-wrapper'>  <h3>JavaScript: {Math.round((this.state.javascript / this.state.totalRepos) * 100) }%</h3>           

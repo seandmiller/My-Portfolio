@@ -1,6 +1,7 @@
 import React, {PureComponent} from 'react';
 import Item from './item';
 import axios from 'axios';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 
@@ -8,7 +9,7 @@ export default class Port extends PureComponent {
     constructor() {
         super();
         this.state = { 
-          Loading:false,
+          Loading:true,
           language: true,
           libraries:true,
            data: [],
@@ -46,13 +47,17 @@ export default class Port extends PureComponent {
           .get('https://aseani.devcamp.space/portfolio/portfolio_items')
           
           .then(response => {
+              
+
               if (filter)  {
                 this.setState({
                   data: response.data.portfolio_items.filter(item => {
                     return item.category === filter
                   }),
                   language:true,
-                  libraries:true
+                  libraries:true,
+                  
+
                 })
               } else {
            this.setState({data: response.data.portfolio_items})
@@ -70,7 +75,8 @@ export default class Port extends PureComponent {
                 language:true,
                 libraries:true
               })
-            }       
+            }
+            this.setState({Loading:false})       
     
           })
             .catch(error => {
@@ -108,7 +114,7 @@ export default class Port extends PureComponent {
     if (this.state.Loading) {  
       return (
           <div>
-            Wait one moment.....
+            Wait one moment.....   <FontAwesomeIcon icon='spinner' spin={true}/>
           </div>
         )
       }
