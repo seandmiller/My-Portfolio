@@ -3,7 +3,7 @@ import React from 'react';
 import photo from '../../helper/images/myPhoto.jpg';
 
 //react redux router
-export default class About extends React.Component {
+export default class About extends React.PureComponent {
   constructor() {
     super();
     this.state = {

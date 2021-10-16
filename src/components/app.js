@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Git from './github';
 import PortfolioDetail from './portfolio-detail';
-import Home from './home';
+
+import Port from './portfolio'
 import About from './pages/about';
 import Manager from './pages/manager';
 import Contact from './pages/contact';
@@ -122,7 +123,7 @@ handleScroll() {
        
 
        <Switch >
-         <Route exact path='/' component={Home}/> 
+         <Route exact path='/' component={Port}/> 
          
          
          <Route exact path='/about' component={About}/> 
