@@ -129,7 +129,7 @@
 .item-details-wrapper {
     display: flex;
     justify-content: center;
-
+    text-align: center;
     .content-detail {
         width: 100%;
         .img-wrapper {
@@ -139,7 +139,17 @@
             }
         
         }
-        text-align: center;
+        
+       .descr {
+           width: 100%;
+           text-align: center;
+           display: flex;
+           justify-content: center;
+           
+        h4 {
+            width: 50%;
+
+        } }
     }
     
    

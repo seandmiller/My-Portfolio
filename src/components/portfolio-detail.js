@@ -26,13 +26,10 @@ constructor(props) {
 componentDidMount() {
     this.getItem();
 }
-    
-    
      render() {
    
          const {
-             name,
-             id, 
+             name, 
              description,
              thumb_image_url
 
@@ -41,24 +38,16 @@ componentDidMount() {
 
         return (
             <div className='item-details-wrapper'>
-           
-
+                  
                   <div className='content-detail'>
                   <div className='img-wrapper'>
                       <img src={thumb_image_url}/>
                   </div>
                   
                   <h1>{name}</h1>
-                  <h4>{description}</h4>
+                <div className='descr'>  <h4>{description}</h4> </div>
                  
                   </div>
-
-
-
-
-
-
-
             </div>
         )
      }
