@@ -49,9 +49,9 @@ handleMouseLeave() {
 
      </div>
       <div className='text-name'>
-      <h3>{name} {name === 'JavaScript' ? <div className='javascript-icon'> <FontAwesomeIcon icon='atom' spin={true}/>  </div>:null} 
-                 {name==='Python' ? <div className='python-icon'> <i className="fab fa-python"></i> </div> :null}
-                 {name === 'Frameworks' ? <div className='framework-icon'> <FontAwesomeIcon icon='book'/> </div> : null }
+      <h3>   {name === 'JavaScript' ? <div className='javascript-icon'>{name} <FontAwesomeIcon icon='atom' spin={true}/>  </div>:null} 
+                 {name==='Python' ? <div className='python-icon'>{name} <i className="fab fa-python"></i> </div> :null}
+                 {name === 'Frameworks' ? <div className='framework-icon'>{name} <FontAwesomeIcon icon='book'/> </div> : null }
 
        </h3>
       </div>

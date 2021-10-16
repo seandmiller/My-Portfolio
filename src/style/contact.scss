@@ -25,6 +25,12 @@
         grid-template-columns: 1fr;
         .left-column {
            display: flex;
+           
+        }
+        .right-column {
+            display: flex;
+            
+            text-align: center;
         }
     }
     
