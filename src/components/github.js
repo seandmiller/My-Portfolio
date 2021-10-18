@@ -15,11 +15,11 @@ export default class Git extends Component {
           totalRepos:0,
           isLoading: true,
           snippets: [ { title: 'Connect four Algorithm',
-                         url: 'https://i.imgur.com/06Xkcgm.png',
+                         url:   'https://i.imgur.com/gvrj0Hz.png' ,
                          desc:'an Algorithm for detecting the winner with a psuedo brute force attack we first check if the (index + 3  == chip) if thats not true then we do not go any further',
                          time_comp: 'O(n^2) as we have one loop nested inside another.' ,
                          learned: 'Previous Algorithm I used to solve this problem was devastingly bad lol, I believe it was O(n^4) ',
-                         output:'https://i.imgur.com/gvrj0Hz.png'
+                         output:'https://i.imgur.com/06Xkcgm.png'
 
                        },
                       {
