@@ -65,8 +65,7 @@ export default class Port extends PureComponent {
           <div>  
          <p  className="para-wrapper"> 
           Python is an incredible language, most of my experience in programing comes from here
-          as a matter of fact the API I built for my portfolio was entirely in Python utilizing the 
-          FastAPI module, currently up to two years in programming with this language.</p>
+          as a matter of fact 80% of my programing is in Python, currently up to one years in programming with this language.</p>
           </div>
           <div> 
          <p className='para-wrapper'>

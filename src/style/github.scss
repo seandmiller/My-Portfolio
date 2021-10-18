@@ -41,7 +41,7 @@
     .git-container {
     width: 30%;
     display: grid;
-
+    height:200px;
     grid-template-columns: 1fr 1fr;
     
     
@@ -126,6 +126,7 @@
     .git-container{
     
         width: 100%;
+        height:100%;
        
         .git-wrapper {
             font-size: 8px;
