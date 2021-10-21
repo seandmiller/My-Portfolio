@@ -27,15 +27,18 @@ export default class App extends Component {
     Icons();
     this.state = {
       loggedInStatus:"NOT_LOGGED_IN",
-      phone:false
+      phone:false,
+      pageHalf: false
     }
 
     this.handleSuccessFullLogin = this.handleSuccessFullLogin.bind(this)
  
-    this.handleUnSuccessFullLogin = this.handleUnSuccessFullLogin.bind(this)
+    this.handleUnSuccessFullLogin = this.handleUnSuccessFullLogin.bind(this);
     this.handleLogOut = this.handleLogOut.bind(this)
-    this.isMobile = this.isMobile.bind(this)
-    this.handleScroll = this.handleScroll.bind(this)
+    this.isMobile = this.isMobile.bind(this);
+   
+    this.getTop  = this.getTop.bind(this)
+    document.addEventListener('scroll', this.getTop)
   }
 
 handleSuccessFullLogin() {
@@ -91,6 +94,10 @@ isMobile() {
   }
 }
 
+getTop(e) {
+    
+    if (window.pageYOffset + 628 >= document.body.scrollHeight) {this.setState({pageHalf:true} )} else {this.setState({pageHalf:false})}; }
+
 componentDidMount() {
   this.checkLoginStatus();
   this.isMobile();
@@ -101,24 +108,26 @@ authorizedPages() {
     <Route key='manager' path='/manager' component={Manager}/>
   ]
 }
-handleScroll() {
-  console.log(window.innerHeight)
-}
+
+
   
   render() {
-   
+    
+    
     
     return (
-      <div className='container' >
+      <div className='container'>
         
         <Router>
         <div>
-        {this.state.phone ? <div className='mobileName'><h1>Aseani Miller</h1> </div>: 
+        {this.state.phone ?   <div className='mobileName'><h1>Aseani Miller</h1> </div>: 
+        
         <Navi  
         loggedInStatus={this.state.loggedInStatus}
         handleLogOut = {this.handleLogOut}
         isMobile     = {this.state.phone}
         />
+
         }
        
 
@@ -150,7 +159,6 @@ handleScroll() {
                   handleUnSuccessFullLogin = {this.handleUnSuccessFullLogin}  
                   />
                 )}
-         
          />
          <Route
          exact path = '/portfolio-detail/:slug'
@@ -169,7 +177,7 @@ handleScroll() {
        
       
         
-        {this.state.phone ?
+        {this.state.phone && this.state.pageHalf ?
         
         <Navi  
         loggedInStatus={this.state.loggedInStatus}
@@ -178,15 +186,8 @@ handleScroll() {
         />: null
        }
         </Router>
-
-
-
-        
-
-        
+     
        
-       
-
       </div>
     );
   }

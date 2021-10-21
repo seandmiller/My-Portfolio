@@ -43,19 +43,21 @@
 
 @media (max-device-width:600px) {
     .nav-wrapper {
-     
+        display: flex;
+        justify-content: center;
         position:fixed;
-        padding:25px;
-        white-space: nowrap;
+        padding: 0px;
+    
         top:91%;
         width:100%;
         font-weight: 900;
         
    
         .left-side {
-            display:flex;
-            justify-content: center;
+        
             width: 100%;
+            
+            padding-top: 10px;
             
         
             
@@ -67,6 +69,7 @@
                 width:100px;
                 font-size: 10px;
                 text-align: center;
+            
                
                 a { text-align: center;
                     align-items: center;

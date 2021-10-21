@@ -54,7 +54,6 @@ const Navi = (props) => {
      </div>
      
     <div className='nav-link'>
-    
       <NavLink to={'/resume'} activeClassName='nav-link-active' >{'Resume'}</NavLink>
     </div>
 
