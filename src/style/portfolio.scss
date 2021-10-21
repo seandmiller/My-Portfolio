@@ -176,6 +176,11 @@
        .item-img {
            width:100%;
            border-bottom: none;
+           box-shadow: 2px 2px 7px black;
+           &:focus {
+               box-shadow: none;
+
+           }
        }
        .btn {display:none;
              
@@ -185,6 +190,7 @@
            display:grid;
            grid-template-columns: 1fr;
            border-bottom: none;
+           
            .text-name {
                display: flex;
                justify-content: center;
@@ -194,6 +200,7 @@
        .language-library-wrapper {
            display: grid;
            grid-template-columns: 1fr;
+           
        .para-wrapper {
            display: none;
        }  }
