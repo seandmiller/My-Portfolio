@@ -31,7 +31,7 @@ export default class App extends Component {
       phone:false,
       pageHalf: false
     }
-    const transition = useTransition(this.state.pageHalf, {})
+    
 
     this.handleSuccessFullLogin = this.handleSuccessFullLogin.bind(this)
  
@@ -98,7 +98,7 @@ isMobile() {
 
 getTop(e) {
     
-    if (window.pageYOffset + 626 >= document.body.scrollHeight/ 2) {this.setState({pageHalf:true} )} else {this.setState({pageHalf:false})}; }
+    if (window.pageYOffset + 626 >= document.body.scrollHeight - 250) {this.setState({pageHalf:true} )} else {this.setState({pageHalf:false})}; }
 
 componentDidMount() {
   this.checkLoginStatus();
@@ -181,7 +181,6 @@ authorizedPages() {
         
         { this.state.phone && this.state.pageHalf ?
         
-      
         <Navi  
         loggedInStatus={this.state.loggedInStatus}
         handleLogOut = {this.handleLogOut}
