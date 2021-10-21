@@ -96,7 +96,7 @@ isMobile() {
 
 getTop(e) {
     
-    if (window.pageYOffset + 628 >= document.body.scrollHeight) {this.setState({pageHalf:true} )} else {this.setState({pageHalf:false})}; }
+    if (window.pageYOffset + 626 >= document.body.scrollHeight - 50) {this.setState({pageHalf:true} )} else {this.setState({pageHalf:false})}; }
 
 componentDidMount() {
   this.checkLoginStatus();
