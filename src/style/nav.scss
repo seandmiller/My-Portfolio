@@ -50,7 +50,7 @@
         top:91%;
         width:100%;
         font-weight: 900;
-      
+        
    
         .left-side {
             display:flex;
@@ -66,14 +66,18 @@
             .nav-link {
                 width:100px;
                 font-size: 10px;
+                text-align: center;
                
                 a { text-align: center;
                     align-items: center;
-                    width: 100px;
+                    width: 10%;
                     color:orange;
                 }
                 
             }
+        }
+        .right-side {
+            width:0%;
         }
     }
 }
@@ -82,13 +86,13 @@
     .nav-wrapper {
         .left-side {
         .nav-link {
-            font-size: 11px;
+            font-size: 10px;
 
         }
       }
     }
 }
-@media (max-device-width:340px) {
+@media (max-device-width:375px) {
     .nav-wrapper {
         .left-side {
         .nav-link {

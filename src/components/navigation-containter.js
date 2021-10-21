@@ -53,8 +53,9 @@ const Navi = (props) => {
        <NavLink to='/projects' activeClassName='nav-link-active' >GitHub</NavLink>
      </div>
      
-    <div>
-      {dynamicLink('/resume', "Resume")}
+    <div className='nav-link'>
+    
+      <NavLink to={'/resume'} activeClassName='nav-link-active' >{'Resume'}</NavLink>
     </div>
 
      {props.loggedInStatus ==='LOGGIN_SUCCESS' ?  dynamicLink('/manager','Portfolio Manager') : null}
