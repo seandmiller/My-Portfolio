@@ -57,11 +57,11 @@ componentDidMount() {
        <div className='text-wrapper'>
        
        <p>
-         Hi my name is Aseani Miller, born in Jamaica came to America at the age of 9, my journey to becoming a software engineer was not a
-         normal one. The moment I left highschool I went straight into acting, while I was acting I was keeping up with tech in my free 
-         time. On one of my random reading escapades I discovered Tesla and the type of technology they were working on. At that 
-         moment everything changed for me and a small passion for tech was slowly brewing till it became too hard to ignore and that's 
-         how I ended up here, studied at Bottega University, currently trying to get my foot into the door in this industry.
+       Aseani Miller discovered software development at the age of 16. Shortly after, he took a brief detour when he embraced his creative ability to pursue the dramatic arts as an undergrad. At the time, he did not know that his creative mind would be one of his greatest assets in engineering. He soon realized that art compliments science, and the greatest engineers are the ones who find creative solutions to complex problems.
+
+Investing is one of Aseani’s favorite hobbies. He became adept to the standards and best practices of the investment world, which eventually led him to owning Tesla shares. He was immediately drawn to Tesla’s bold mission and groundbreaking technological accomplishments. Aseani’s natural thirst for mastering new frontiers combined with an admiration of Tesla birthed a burning desire to be an active participant in the creation of tomorrow’s technology.
+
+Aseani is currently mastering Python and JavaScript at Bottega University. When he is not in school or self-teaching to boost his coding prowess, he fills his downtime with hiking, swimming, and editing anime music videos.
  
       </p>
       </div>

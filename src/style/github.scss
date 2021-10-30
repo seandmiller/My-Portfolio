@@ -63,16 +63,16 @@
         }
         a { 
             text-decoration: none;
-            color:orange;
+            color:darkblue;
         
         }
         &:hover {
-            color:teal;
-            background-color:orange;
+            color:white;
+            background-color:black;
             box-shadow: 1px 1px 10px black;
             border-radius: 1px;
             a {
-                color:teal;
+                color:white;
             }
         }
     }
