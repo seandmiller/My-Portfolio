@@ -54,7 +54,7 @@
        align-items: center;
        height:100%;
 
-       .subtitle {
+      .img-text-wrapper .subtitle {
            transition: 1s ease-in-out;
            color:transparent;
            margin:3px;
@@ -149,8 +149,10 @@
 
 @media (max-device-width : 600px) {
    .homepage-wrapper {
+
     .img-text-wrapper:hover .subtitle {
         visibility: hidden;
+        color:transparent;
     
     }
        .item-img {
