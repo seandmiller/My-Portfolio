@@ -7,12 +7,34 @@ export default class Item extends PureComponent {
   constructor (props) {
    super(props);
    this.state = {
-     ItemClass: ""
+     ItemClass: "",
+     phone:false
          };
+         this.isMobile = this.isMobile.bind(this)
   }
   
+  isMobile() {
+    if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+      this.setState({
+        phone:true
+      })
+      
+    } else{
+      this.setState({
+        phone:false
+      })
+    }
+  }
+
+  componentDidMount() {
+    this.isMobile()
+  }
+
 handleMouseEnter() {
+  if (!this.state.phone) {
+
   this.setState({ItemClass: "image-blur"});
+  }
 };
 
 handleMouseLeave() {
