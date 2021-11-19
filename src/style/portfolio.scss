@@ -172,6 +172,10 @@
                justify-content: center;
                text-align: center;
            }
+           .img-text-wrapper:hover .subtitle {
+            color:black;
+            font-weight: 400;
+        }
        }
        .language-library-wrapper {
            display: grid;
@@ -190,6 +194,9 @@
         text-align: none;
         width: 100%;
     
+    }
+    .image-blur {
+        display: none;
     }
    
    .content-detail {
