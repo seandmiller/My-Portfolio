@@ -149,6 +149,10 @@
 
 @media (max-device-width : 600px) {
    .homepage-wrapper {
+    .img-text-wrapper:hover .subtitle {
+        color:black;
+        font-weight: 400;
+    }
        .item-img {
            width:100%;
            border-bottom: none;
@@ -172,10 +176,7 @@
                justify-content: center;
                text-align: center;
            }
-           .img-text-wrapper:hover .subtitle {
-            color:black;
-            font-weight: 400;
-        }
+        
        }
        .language-library-wrapper {
            display: grid;
