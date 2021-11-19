@@ -150,8 +150,8 @@
 @media (max-device-width : 600px) {
    .homepage-wrapper {
     .img-text-wrapper:hover .subtitle {
-        color:transparent;
-        font-weight: 400;
+        opacity: 0.52;
+    
     }
        .item-img {
            width:100%;
