@@ -31,7 +31,7 @@ export default class Item extends PureComponent {
   }
 
 handleMouseEnter() {
-  if (!this.state.phone) {
+  if (this.state.phone == false) {
 
   this.setState({ItemClass: "image-blur"});
   }
