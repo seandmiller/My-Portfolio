@@ -11,6 +11,7 @@ export default class Item extends PureComponent {
      phone:false
          };
          this.isMobile = this.isMobile.bind(this)
+         this.isMobile()
   }
   
   isMobile() {
@@ -26,9 +27,7 @@ export default class Item extends PureComponent {
     }
   }
 
-  componentDidMount() {
-    this.isMobile()
-  }
+ 
 
 handleMouseEnter() {
   if (this.state.phone == false) {
