@@ -185,6 +185,14 @@
    .item-details-wrapper {
     width: 100%;
     
+    .descr {
+        display: none;
+        text-align: none;
+        width: 100%;
+        h4 {
+            width: 100%;
+        }
+    }
    
    .content-detail {
        width:100%;
