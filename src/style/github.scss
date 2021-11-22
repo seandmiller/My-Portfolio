@@ -4,8 +4,10 @@
 @keyframes fadeinout {
     from {
         opacity: 0%;
+        transform: scale(90%);
     } to {
         opacity: 100%;
+        transform: scale(100%);
     }
 } 
 
@@ -14,6 +16,7 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
     animation: fadeinout 1s ease-in-out forwards;
+    -webkit-backface-visibility: hidden;
     
   
     .snippets {
