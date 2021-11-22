@@ -30,20 +30,41 @@
     }
 
 }
+.contact-me {
+    margin-left: 25%;
+    font-size: 20px;
+    color:white;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;   
+    width: 50%;
+    border-radius:20px ;
+
+    
+    
+        background-color: #4B8BBE ;
+        box-shadow: 2px 1px 5px black ;
+    
+    
+    
+
+}
 @media (max-device-width:600px) {
-    .contact-container {
-        font-size:12px;
-        display: grid;
-        grid-template-columns: 1fr;
-        .left-column {
-           display: flex;
-           
-        }
-        .right-column {
-            display: flex;
-            
-            text-align: center;
-        }
+    .contact-me {
+        margin-left: 25%;
+        
+
+    }
+    
+}
+
+@media (max-device-width:450px) {
+    .contact-me {
+        margin-left: 25%;
+        font-size: 15px;
+        
+
     }
     
 }

@@ -45,10 +45,10 @@ const Navi = (props) => {
      <div className='nav-link'>
        <NavLink to='/about' activeClassName='nav-link-active'>My Bio</NavLink>
      </div>
-     <div className='nav-link'>
+     {/* <div className='nav-link'>
        <NavLink to='/contact'activeClassName='nav-link-active' >Contact  </NavLink>
 
-     </div>
+     </div> */}
      <div className='nav-link' >
        <NavLink to='/projects' activeClassName='nav-link-active' >GitHub</NavLink>
      </div>

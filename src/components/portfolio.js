@@ -10,7 +10,9 @@ export default class Port extends PureComponent {
         super();
         this.state = { 
         
-           data: [],  
+           data: [],
+           newClass:  '',
+           class:false  
         }   
      }
         getPortItems() {
@@ -39,6 +41,7 @@ export default class Port extends PureComponent {
                return <Item  key={el.id} item={el}  />
              }); }
   
+
 
     render()  {
       
@@ -79,7 +82,10 @@ export default class Port extends PureComponent {
          </div> 
       
           </div>
-      
+      <div className='contact-me' > 
+             <div><FontAwesomeIcon icon='envelope' /> milleraseani@gmail.com</div>
+                <div><FontAwesomeIcon icon='phone'/>  (510) - 355 - 5688</div>
+                <div> <FontAwesomeIcon icon='map-marked-alt'/>  Oakland CA</div>  </div>
 
      </div>    )
 
