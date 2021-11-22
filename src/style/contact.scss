@@ -11,6 +11,7 @@
     grid-template-columns: 1fr 1fr;
     height: calc(100vh - 83px);
     animation: fadeinout 1s ease-in-out forwards;
+    -webkit-backface-visibility: hidden;
     
 
     .left-column {
