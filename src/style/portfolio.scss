@@ -24,6 +24,7 @@
 
 .homepage-wrapper {
     animation: fade 2s ease-in-out forwards;
+    -webkit-backface-visibility: hidden;
   .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -179,7 +180,7 @@
 
 @media (max-device-width : 600px) {
    .homepage-wrapper {
-    animation: phonefade 2s ease-in-out forwards;
+    animation: phonefade 1s ease-in-out forwards;
    
 
 
