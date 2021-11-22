@@ -9,7 +9,7 @@ export default class Port extends PureComponent {
     constructor() {
         super();
         this.state = { 
-          Loading:true,
+        
            data: [],  
         }   
      }
@@ -19,7 +19,7 @@ export default class Port extends PureComponent {
           .then(response => {
                 this.setState({
                   data: response.data.portfolio_items,
-                  Loading:false
+                
                 })
           })
             .catch(error => {
@@ -43,14 +43,7 @@ export default class Port extends PureComponent {
     render()  {
       
       
-    if (this.state.Loading) {  
-      return (
-          <div>
-            Wait one moment.....   <FontAwesomeIcon icon='spinner' spin={true}/>
-          </div>
-        )
-      }
-
+   
     return (
         <div className='homepage-wrapper'>
         

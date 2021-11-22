@@ -1,11 +1,36 @@
 
-.portfolio-items-wrapper {
+@keyframes phonefade {
+    from {
+        opacity: 0%;
+        transform: translate(-50%);
+    } to {
+       opacity: 100%;
+       transform: translate(0%);
+    }
+    
+}
+@keyframes fade {
+    from {
+        opacity: 0%;
+        transform: translateY(-50%);
+    } to {
+       opacity: 100%;
+       transform: translate(0%);
+    }
+    
+}
+
+
+.homepage-wrapper {
+    animation: fade 2s ease-in-out forwards;
+  .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     
     
     
-   a {text-decoration: none;
+  
+    a {text-decoration: none;
        color:orange;
 
    }
@@ -148,11 +173,14 @@
     
     }
    
-}
+} }
 
 
 @media (max-device-width : 600px) {
    .homepage-wrapper {
+    animation: phonefade 2s ease-in-out forwards;
+   
+
 
     .img-text-wrapper:hover  {
         visibility: hidden;
@@ -227,4 +255,4 @@
     font-size: 20px;
 }
 
-}
+} 

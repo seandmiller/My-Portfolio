@@ -10,6 +10,31 @@ body {
      margin-left:5px;
      margin-right:5px;
  }
+ .intro-wrapper {
+    display: flex;
+    justify-content: center;
+ .introduction {
+     font-size: 400px;
+    text-align: center;
+     margin-top: 80px;
+     background-color: black;
+     color: white;
+     width:25%;
+     animation: expand 1s ease-in-out forwards; 
+     h1 {
+         font-size: 15px;
+         white-space: nowrap;
+         overflow: hidden;
+     }
+ } }
+@keyframes expand {
+    from
+    {
+        width: 5%;
+    } to {
+        width: 50%;
+    }
+}
  
 }
 
@@ -17,13 +42,42 @@ body {
     display: grid;
     grid-template-columns: 1fr;
 }
+@keyframes phone-wrap {
+    from {
+        background-color: transparent;
+        color:transparent;
+        width:5%;
+        height:5%;
+        border-bottom: transparent;
+        font-size: 15px;
+    } 
+    to {
+        width: 50%;
+        height: 50%;
+        border-bottom: 2px solid white;
+        font-size: 25px;
+        border-radius: 20px;
+    } 
+}
 @media (max-device-width:600px) {
 
     body {
     padding-bottom: 100px; 
       .container {
           margin:0px;
-      } }
+      } 
 
+      .intro-wrapper {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+          .introduction {  
+              margin-top:300px;
+              
+              animation: phone-wrap 1s ease-in-out forwards;
+          }
+      }
+    }
+  
 
 }

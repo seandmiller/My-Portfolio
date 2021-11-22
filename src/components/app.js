@@ -17,7 +17,8 @@ import {
 } from 'react-router-dom';
 import Icons from '../helper/icons';
 import Resume from './resume';
-import {useTransition} from 'react-spring';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 
 
@@ -29,7 +30,8 @@ export default class App extends Component {
     this.state = {
       loggedInStatus:"NOT_LOGGED_IN",
       phone:false,
-      pageHalf: false
+      pageHalf: false,
+      isLoading: true
     }
     
 
@@ -38,7 +40,7 @@ export default class App extends Component {
     this.handleUnSuccessFullLogin = this.handleUnSuccessFullLogin.bind(this);
     this.handleLogOut = this.handleLogOut.bind(this)
     this.isMobile = this.isMobile.bind(this);
-   
+    
     this.getTop  = this.getTop.bind(this)
     document.addEventListener('scroll', this.getTop)
   }
@@ -103,18 +105,23 @@ getTop(e) {
 componentDidMount() {
   this.checkLoginStatus();
   this.isMobile();
-}
-
-authorizedPages() {
-  return [
-    <Route key='manager' path='/manager' component={Manager}/>
-  ]
+  setTimeout(function() {this.setState({isLoading:false}) }.bind(this), 1000)
+  
 }
 
 
   
   render() {
-    
+    if (this.state.isLoading) {  
+      return ( <div className='intro-wrapper'>
+          <div className='introduction' style={{background : 'url(' + 'https://media.istockphoto.com/photos/blue-abstract-texture-background-pattern-design-template-with-picture-id649683354?k=20&m=649683354&s=612x612&w=0&h=3oeToJneeKW1Ie5_BWI4-f-NhcA45hzAhIFlc3XDFZ0=' + ')'}}>
+              
+               <h1>Aseani Miller</h1>
+          </div>
+          </div>
+        )
+      }
+
     
     
     return (
