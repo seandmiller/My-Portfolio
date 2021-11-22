@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 
-  
+@keyframes fadeinout {
+    from {
+        opacity: 0%;
+    } to {
+        opacity: 100%;
+    }
+} 
+
 .gitPage {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
+    animation: fadeinout 1s ease-in-out forwards;
     
   
     .snippets {

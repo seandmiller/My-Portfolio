@@ -1,7 +1,16 @@
+@keyframes fadeinout {
+    from {
+        opacity: 0%;
+    } to {
+        opacity: 100%;
+    }
+}
+
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: calc(100vh - 83px);
+    animation: fadeinout 1s ease-in-out forwards;
     
 
     .left-column {

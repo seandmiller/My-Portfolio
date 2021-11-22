@@ -1,5 +1,14 @@
+@keyframes fadeinout {
+    from {
+        opacity: 0%;
+    } to {
+        opacity: 100%;
+    }
+}
+
 .resume-wrapper {
     box-shadow: 2px 2px 5px black;
+    animation: fadeinout 1s ease-in-out forwards;
 
     .resume-cont {
         display: grid;

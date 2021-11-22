@@ -46,7 +46,7 @@ handleMouseLeave() {
   
   
   return (
-    <Link to={`/portfolio-detail/${id}`}>
+ 
     
     <div className="item-wrapper" 
       onMouseEnter={() => this.handleMouseEnter()}
@@ -87,6 +87,6 @@ handleMouseLeave() {
 
 
        </div>
-     </Link>
+     
     )
 } }

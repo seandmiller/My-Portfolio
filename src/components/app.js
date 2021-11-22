@@ -169,11 +169,7 @@ componentDidMount() {
                   />
                 )}
          />
-         <Route
-         exact path = '/portfolio-detail/:slug'
-         component={PortfolioDetail}
          
-         />
 
         
 
