@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Git from './github';
-import PortfolioDetail from './portfolio-detail';
-
 import Port from './portfolio'
 import About from './pages/about';
-import Manager from './pages/manager';
-import Contact from './pages/contact';
 import Navi from './navigation-containter';
 import NoMatch from './pages/no-match';
 import Auth from './pages/authen/auth';
@@ -158,7 +154,7 @@ componentDidMount() {
          <Route path='/projects' component={Git}/>
          <Route path='/resume' component={Resume}/>
          
-         <Route path='/contact' component={Contact}/>
+        
          {this.state.loggedInStatus==='LOGGIN_SUCCESS' ? this.authorizedPages():null }
          <Route path='/auth'
                 render={props=> (
