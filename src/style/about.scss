@@ -42,8 +42,12 @@
 
 }
 body {
-    margin:0px;
-}
+    margin:0px;}
+
+@media (max-width:1000px) {
+  .about-container {
+    color:white; }
+} 
 
 @media (max-width:600px) {
     .about-container {
