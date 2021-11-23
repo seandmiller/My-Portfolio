@@ -1,5 +1,15 @@
 @import 'var.scss';
 
+@keyframes fadeinout {
+    from {
+        opacity: 0%;
+        transform: translateY(-50%);
+    } to {
+        opacity: 100%;
+        transform: translateY(0%);
+    }
+}
+
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
@@ -51,6 +61,7 @@
         top:91%;
         width:100%;
         font-weight: 900;
+        animation: fadeinout 1s ease-in-out forwards;
         
    
         .left-side {
@@ -89,6 +100,7 @@
 
 @media (max-device-width:420px) {
     .nav-wrapper {
+       
         .left-side {
         .nav-link {
             font-size: 10px;
