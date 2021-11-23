@@ -8,10 +8,12 @@ export default class Item extends PureComponent {
    super(props);
    this.state = {
      ItemClass: "",
+     image:0,
      phone:false
          };
          this.isMobile = this.isMobile.bind(this)
          this.isMobile()
+
   }
   
   isMobile() {
@@ -28,6 +30,9 @@ export default class Item extends PureComponent {
   }
 
  
+componentDidMount() {
+  setTimeout(() =>  {this.setState({image:100})}, 1000)
+}
 
 handleMouseEnter() {
   if (this.state.phone == false) {
@@ -40,6 +45,7 @@ handleMouseLeave() {
    this.setState({ItemClass: ""});
 
 };
+
 
   render () {
   const {name, description,id, thumb_image_url, } = this.props.item
@@ -57,9 +63,11 @@ handleMouseLeave() {
       
      
      <div 
-     className={'item-img ' + this.state.ItemClass}
+     className={'item-img ' + this.state.image + this.state.ItemClass}
      style={{
-     backgroundImage: "url(" + thumb_image_url + ")"
+     backgroundImage: "url(" + thumb_image_url + ")",
+     opacity: this.state.image
+     
 
      }}
      />
