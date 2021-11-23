@@ -9,10 +9,7 @@ export default class Port extends PureComponent {
     constructor() {
         super();
         this.state = { 
-        
-           data: [],
-           newClass:  '',
-           class:false  
+           data: []
         }   
      }
         getPortItems() {
