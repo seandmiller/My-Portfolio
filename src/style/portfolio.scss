@@ -1,15 +1,15 @@
 
-@keyframes phonefade {
-    from {
-        opacity: 0%;
+// @keyframes phonefade {
+//     from {
+//         opacity: 0%;
  
-    } to {
-       opacity: 100%;
+//     } to {
+//        opacity: 100%;
       
 
-    }
+//     }
     
-}
+// }
 @keyframes fade {
     from {
         opacity: 0%;
@@ -23,11 +23,12 @@
 
 
 .homepage-wrapper {
-    animation: fade 2s ease-in-out forwards;
+   
     -webkit-backface-visibility: hidden;
   .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    animation: fade 2s ease-in-out forwards;
     
     
     
@@ -40,6 +41,7 @@
     
     .item-wrapper {
         position:relative;
+
         .text-name {
             display: flex;
             justify-content: center;
@@ -180,7 +182,7 @@
 
 @media (max-device-width : 600px) {
    .homepage-wrapper {
-    animation: phonefade 1s ease-in-out forwards;
+    
    
 
 
