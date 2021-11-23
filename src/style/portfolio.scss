@@ -1,4 +1,10 @@
-
+@keyframes fading {
+    from {
+        opacity: 0%;
+    } to {
+        opacity: 100%;
+    }
+}
 
 @keyframes fade {
     from {
@@ -106,12 +112,14 @@
 }
 
 .para-wrapper-framework {
+    animation : fading 2s ease-in-out forwards;
     a {
         text-decoration: none;
         color:black;
     }
 }
 .para-wrapper {
+    animation: fading 2s ease-in-out forwards;
     margin-right:3px;
     font-size: 15px;
 
