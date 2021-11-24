@@ -63,7 +63,7 @@ handleMouseLeave() {
       
      
      <div 
-     className={'item-img ' + this.state.image + this.state.ItemClass}
+     className={'item-img ' + this.state.ItemClass}
      style={{
      backgroundImage: "url(" + thumb_image_url + ")",
      opacity: this.state.image
