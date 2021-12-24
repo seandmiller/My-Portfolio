@@ -30,7 +30,7 @@ export default function() {
            <li> <h4>Digital Enigma </h4>  </li>
            <p>With Fastapi and just regular Python, I was able to create a digital version of the Enigma Machine. A WW2 weapon used to cipher and decipher messages
                 all without an Encryption and Decryption mode. In This project I learned how to post an API to the public and link my Python code with JavaScript code, here is a link 
-                <a href='https://enigmasean.netlify.app/'>Link to Project</a>
+                <a href='https://enigmasean.netlify.app/'> Link to Project</a>
            </p>
          
 
