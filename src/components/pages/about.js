@@ -45,7 +45,7 @@ componentDidMount() {
   }}
   >
     
-    Photo Credit: Lisa Keating's Studio 
+   
     </div>
     
 
