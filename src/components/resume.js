@@ -27,7 +27,7 @@ export default function() {
             In this project I created an Algorithm that detected the winner and ends the game once this condition 
             has been met.
            </p>
-           <li> <h4>Digital Enigma </h4>  </li>
+           <li> <h4> A Digital Enigma Machine </h4>  </li>
            <p>With Fastapi and just regular Python, I was able to create a digital version of the Enigma Machine. A WW2 weapon used to cipher and decipher messages
                 all without an Encryption and Decryption mode. In This project I learned how to post an API to the public and link my Python code with JavaScript code, here is a link 
                 <a href='https://enigmasean.netlify.app/'> Link to Project</a>
@@ -39,17 +39,11 @@ export default function() {
         </ul>
        <ul className='resume-work'>
         <h2>Work Experience</h2>
-        <li><h4>TransDev - Autonomous Vehicle Specialist </h4></li>
-        <p> During this work experience I was interacting with the Waymo self autonomous vehicles,
-            my responsibilities were to log data from the vehicle, correct improper behavior and to take note 
-            of anything that made me feel uncomfortable while inside the vehicle.
-
-        </p>
-        <li><h4>Tesla Production Associate</h4></li>
-        <p> My responsibilities were to check the vehicle for paint defects and to remove the defects before the vehicle exit the factory.
-              My other responsibilities include, wiping the vehicle before applying paint and driving the vehicle to a desired location in the factory.
-
-        </p>
+   
+        <li><h4>Digital Enigma </h4></li>
+        <p>This initial project started out as a personal project but then eventually started getting used by multiple co workers and friends. What I learned is that
+            the real world is often messy and in order to write great software we must account for this while at the same time having a good UI/UX experience. I also
+            incorporated Computer Vision technology in order to make the decryption process easier. </p>
         </ul>
         
         </div>

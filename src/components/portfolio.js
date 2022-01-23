@@ -70,7 +70,7 @@ export default class Port extends PureComponent {
          <ul> As of current these are the Technologies that I know
            <li>tkinter - Python</li>
            <li>FastAPI - Python</li>
-           <li> OpenCV - Python (beginner)</li>
+          
            <li> React - JavaScript</li>
            <a href='https://github.com/seandmiller'> <h3> GitHub <i className="fab fa-github-square "></i> </h3>   </a>
          </ul>
