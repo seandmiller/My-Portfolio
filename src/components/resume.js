@@ -16,7 +16,7 @@ export default function() {
         
     }}>
         <div className='resume-header'> <h1>Aseani Miller</h1> 
-        <a href="./Sean's_Resume.pdf" download="Aseani's Resume.pdf">
+        <a href="./Seans_Resume.pdf" download="Aseani's Resume.pdf">
             Full Resume <FontAwesomeIcon icon='download'/> </a>  </div>
         <div className='resume-cont'>
         
