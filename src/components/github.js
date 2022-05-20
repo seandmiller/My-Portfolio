@@ -15,12 +15,12 @@ export default class Git extends Component {
           javascript:0,
           totalRepos:0,
           isLoading: true,
-          snippets: [ { title: 'Connect four Algorithm',
-                         url:   'https://i.imgur.com/gvrj0Hz.png' ,
-                         desc:'an Algorithm for detecting the winner with a psuedo brute force attack we first check if the (index + 3  == chip) if thats not true then we do not go any further',
-                         time_comp: 'O(n^2) as we have one loop nested inside another.' ,
-                         learned: 'Previous Algorithm I used to solve this problem was devastingly bad lol, I believe it was O(n^4) ',
-                         output:'https://i.imgur.com/06Xkcgm.png',
+          snippets: [ { title: 'Digital Enigma',
+                         url:   'https://spartacus-educational.com/00enigma2.jpg' ,
+                         desc:'an Algorithm for scrambling text, creating a chain or a link between the encrypted text and decrypted text',
+                         time_comp: 'O(n)' ,
+                         learned: 'I learned how to creatively turn mechanical logic into digital logic. ',
+                         output:'https://th-thumbnailer.cdn-si-edu.com/i-UnSMSAeNPiw8sBjPAphUYSFr0=/1072x720/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/f5/95/f59548db-c8c7-47a0-8404-9e44cd4b8db6/enigma.jpg',
                          id:0
 
                        }
