@@ -1,6 +1,6 @@
 
 import React from 'react';
-import photo from '../../helper/images/myPhoto.jpg';
+import photo from '../../helper/images/myPhoto.webp';
 
 //react redux router
 export default class About extends React.PureComponent {
