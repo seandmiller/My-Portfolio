@@ -81,7 +81,7 @@ export default class Port extends PureComponent {
           </div>
       <div className='contact-me' > 
              <div><FontAwesomeIcon icon='envelope' /> milleraseani@gmail.com</div>
-                <div><FontAwesomeIcon icon='phone'/>  (510) - 355 - 5688</div>
+                <div><FontAwesomeIcon icon='phone'/>  (510) - 216 - 8015</div>
                 <div> <FontAwesomeIcon icon='map-marked-alt'/> Pittsburg CA</div>  </div>
 
      </div>    )
